@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#E1BEE7"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUIZ APP"
+            android:textSize="36sp"
+            android:paddingLeft="120dp"
+            android:paddingRight="120dp"
+            android:paddingBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:paddingRight="20dp"
+                android:textSize="20sp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:hint="Full Name"
+                android:inputType="textCapWords"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Questions"
+            android:paddingBottom="25dp"
+            android:paddingLeft="150dp"
+            android:paddingRight="145dp"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Who is the CEO of Google ?"
+            android:textColor="#000000"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/google">
+
+        <RadioButton
+            android:id="@+id/satya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satya Nadella"/>
+        <RadioButton
+            android:id="@+id/jeff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jeff Bezos"/>
+        <RadioButton
+            android:id="@+id/sundar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sundar Pichai"/>
+        <RadioButton
+            android:id="@+id/elon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elon Musk"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Which of the following is/are states of India ?"
+            android:textColor="#000000"
+            android:paddingTop="20dp"/>
+        <CheckBox
+            android:id="@+id/rajasthan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rajasthan"/>
+        <CheckBox
+            android:id="@+id/manila"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manila"/>
+        <CheckBox
+            android:id="@+id/bihar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bihar"/>
+        <CheckBox
+            android:id="@+id/delhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delhi"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Which is the largest Continent ?"
+            android:textColor="#000000"
+            android:paddingTop="20dp"/>
+        <EditText
+            android:id="@+id/ans"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:hint="Text"
+            android:inputType="textCapWords"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. In which city of China did Corona started first ?"
+            android:textColor="#000000"
+            android:paddingTop="20dp"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/china">
+        <RadioButton
+            android:id="@+id/wuhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wuhan"/>
+        <RadioButton
+            android:id="@+id/shanghai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shanghai"/>
+        <RadioButton
+            android:id="@+id/hongkong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hong Kong" />
+        <RadioButton
+            android:id="@+id/taipei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taipei"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Office of United Nations is situated in ?"
+            android:textColor="#000000"
+            android:paddingTop="20dp"/>
+        <CheckBox
+            android:id="@+id/nairobi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nairobi"/>
+        <CheckBox
+            android:id="@+id/geneva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geneva"/>
+        <CheckBox
+            android:id="@+id/vienna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vienna"/>
+        <CheckBox
+            android:id="@+id/newyork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New York"/>
+
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginRight="140dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="60dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="20dp" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
